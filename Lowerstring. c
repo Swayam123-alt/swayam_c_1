@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <ctype.h>
+void toLowerCase(char *str) {
+    while (*str) {
+        *str = tolower(*str);
+        str++;
+    }
+}
+int main() {
+    char str[] = "HELLO WORLD";
+    toLowerCase(str);
+    printf("Lowercase string: %s\n", str);
+    printf ("swayam");
+    return 0;
+}

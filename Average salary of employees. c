@@ -7,7 +7,7 @@ struct Employee {
     float salary;
 };
 
-// Function to calculate the average salary
+
 float calculateAverageSalary(struct Employee employees[], int count) {
     float totalSalary = 0.0;
 

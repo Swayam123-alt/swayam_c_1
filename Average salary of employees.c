@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-// Define a structure for Employee
-struct Employee {
+struct Employee 
+{
     char name[50];
     int id;
     float salary;
@@ -11,25 +11,21 @@ struct Employee {
 float calculateAverageSalary(struct Employee employees[], int count) {
     float totalSalary = 0.0;
 
-    for (int i = 0; i < count; i++) {
+    for (int i = 0; i < count; i++) 
+{
         totalSalary += employees[i].salary;
     }
 
     return totalSalary / count;
 }
 
-int main() {
+int main() 
+{
     int n;
-
-  
-    printf("Enter the number of employees: ");
+ printf("Enter the number of employees: ");
     scanf("%d", &n);
-
-    
-    struct Employee employees[n];
-
-    
-    for (int i = 0; i < n; i++) {
+ struct Employee employees[n];
+for (int i = 0; i < n; i++) {
         printf("\nEnter details for employee %d:\n", i + 1);
         printf("Name: ");
         scanf("%s", employees[i].name);

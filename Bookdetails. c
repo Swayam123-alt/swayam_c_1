@@ -1,0 +1,21 @@
+#include<stdio.h>
+struct bookdetails
+{
+    char bookname[10];
+    char authorname[30];
+    int price;
+};
+char main()
+{
+struct bookdetails b1;
+printf("enter book details:\n");
+printf("enter bookname:\n");
+scanf("%s",b1.bookname);
+printf("enter authorname:\n");
+scanf("%s",b1.authorname);
+printf("enter price:\n");
+scanf("%d",b1.price);
+printf("bookname:%s\nauthorna:%s\nprice:%d",b1.bookname, 
+ b1.authorname,b1.price);
+return 0;
+}

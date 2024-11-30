@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+// Function prototypes
+float metersToKilometers(float meters);
+float gramsToKilograms(float grams);
+
+int main() {
+    int choice;
+    float inputValue, convertedValue;
+
+    printf("Unit Converter Program\n");
+    printf("1. Convert Meters to Kilometers\n");
+    printf("2. Convert Grams to Kilograms\n");
+    printf("Enter your choice (1 or 2): ");
+    scanf("%d", &choice);
+
+    if (choice == 1) {
+        printf("Enter value in meters: ");
+        scanf("%f", &inputValue);
+        convertedValue = metersToKilometers(inputValue);
+        printf("%.2f meters = %.2f kilometers\n", inputValue, convertedValue);
+    } else if (choice == 2) {
+        printf("Enter value in grams: ");
+        scanf("%f", &inputValue);
+        convertedValue = gramsToKilograms(inputValue);
+        printf("%.2f grams = %.2f kilograms\n", inputValue, convertedValue);
+    } else {
+        printf("Invalid choice! Please run the program again.\n");
+    }
+
+    return 0;
+}
+
+// Function to convert meters to kilometers
+float metersToKilometers(float meters) {
+    return meters / 1000.0;
+}
+
+// Function to convert grams to kilograms
+float gramsToKilograms(float grams) {
+    return grams / 1000.0;
+}
